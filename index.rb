@@ -7,7 +7,19 @@ ingredients = [
 ]
 
 def sandwich_request(ingredients, order) 
-  # your code here!
+  item = 0
+  item2 = 0
+  for item in ingredients
+  item2 = 0
+    for item2 in ingredients[item]
+      if item2 == order
+        return true
+      else
+        return false
+      end
+      item2 += 1
+    end
+  end
 end
 
 # example city_info hash
@@ -37,3 +49,4 @@ cities = {
 def city_populations(cities)
   # your code here!
 end
+puts sandwich_request(ingredients, ["mayo"])
